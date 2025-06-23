@@ -50,10 +50,10 @@ const CategoryProductCards = ({
               <div className="flex items-center justify-between px-4 pb-4">
                 <div>
                   <span className="text-sm line-through text-gray-400">
-                    ₹{product.original_price}
+                    ${product.original_price}
                   </span>
                   <div className="text-[#00b386] font-semibold text-lg">
-                    ₹{product.offer_price}
+                    ${product.offer_price}
                   </div>
                 </div>
 

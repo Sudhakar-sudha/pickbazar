@@ -23,7 +23,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
             </div>
             {/* Bottom row: price */}
             <div className="mt-3 bg-white text-[#00b386] font-semibold text-center py-1 rounded">
-              ₹{totalPrice}
+              ${totalPrice}
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
                   {/* Product Details */}
                   <div className="flex-1">
                     <h3 className="font-semibold text-sm mb-1">{item.name}</h3>
-                    <p className="text-xs text-[#00b386] font-bold">₹{item.offer_price}</p>
+                    <p className="text-xs text-[#00b386] font-bold">${item.offer_price}</p>
                     <p className="text-xs text-gray-500">
                       {item.quantity} × ({item.quantityLabel || "1kg"})
                     </p>
@@ -100,7 +100,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
 
                   {/* Total Price */}
                   <p className="text-sm font-semibold text-black absolute top-5 right-14">
-                    ₹{item.offer_price * item.quantity}
+                    ${item.offer_price * item.quantity}
                   </p>
                 </div>
               ))}
@@ -112,7 +112,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
             <button className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 px-4 rounded-3xl hover:bg-green-700 transition">
               <span className="text-lg font-medium">Checkout</span>
               <span className="bg-white text-[#00b386] text-sm font-semibold px-6 py-2 rounded-3xl shadow-sm">
-                ₹{totalPrice}
+                ${totalPrice}
               </span>
             </button>
           </div>
