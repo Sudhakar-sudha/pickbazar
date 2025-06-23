@@ -1,0 +1,422 @@
+{
+  "categories": [
+    {
+      "name": "Fresh Fruits",
+      "products": [
+        {
+          "image": "../src/assets/1.png",
+          "name": "Apple",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Banana",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        },
+         {
+          "image": "../src/assets/3.png",
+          "name": "Orange",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/4.png",
+          "name": "Lemon",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        },
+          {
+          "image": "../src/assets/1.png",
+          "name": "Mango",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Grapes",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        },
+         {
+          "image": "../src/assets/3.png",
+          "name": "Watermelon",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/4.png",
+          "name": "Papaya",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        },
+         {
+          "image": "../src/assets/5.png",
+          "name": "Kiwi",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/6.png",
+          "name": "Pomegranate",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        },
+         {
+          "image": "../src/assets/1.png",
+          "name": "Guava",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 200,
+          "offer_price": 180
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Strawberry",
+          "offer": "5% OFF",
+          "quantity": "1 dozen",
+          "original_price": 60,
+          "offer_price": 57
+        }
+      ]
+    },
+    {
+      "name": "Leafy Greens",
+      "products": [
+        {
+          "image": "../src/assets/1.png",
+          "name": "Spinach",
+          "offer": "8% OFF",
+          "quantity": "1 bunch",
+          "original_price": 40,
+          "offer_price": 36.8
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Methi (Fenugreek)",
+          "offer": "5% OFF",
+          "quantity": "1 bunch",
+          "original_price": 30,
+          "offer_price": 28.5
+        },
+             {
+          "image": "../src/assets/3.png",
+          "name": "Spinach",
+          "offer": "8% OFF",
+          "quantity": "1 bunch",
+          "original_price": 40,
+          "offer_price": 36.8
+        },
+        {
+          "image": "../src/assets/4.png",
+          "name": "Methi (Fenugreek)",
+          "offer": "5% OFF",
+          "quantity": "1 bunch",
+          "original_price": 30,
+          "offer_price": 28.5
+        },
+             {
+          "image": "../src/assets/5.png",
+          "name": "Spinach",
+          "offer": "8% OFF",
+          "quantity": "1 bunch",
+          "original_price": 40,
+          "offer_price": 36.8
+        },
+        {
+          "image": "../src/assets/6.png",
+          "name": "Methi (Fenugreek)",
+          "offer": "5% OFF",
+          "quantity": "1 bunch",
+          "original_price": 30,
+          "offer_price": 28.5
+        }
+      ]
+    },
+    {
+      "name": "Root Vegetables",
+      "products": [
+        {
+         "image": "../src/assets/1.png",
+          "name": "Carrot",
+          "offer": "12% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 44
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Beetroot",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 45,
+          "offer_price": 40.5
+        },
+             {
+         "image": "../src/assets/3.png",
+          "name": "Carrot",
+          "offer": "12% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 44
+        },
+        {
+          "image": "../src/assets/4.png",
+          "name": "Beetroot",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 45,
+          "offer_price": 40.5
+        },
+             {
+         "image": "../src/assets/5.png",
+          "name": "Carrot",
+          "offer": "12% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 44
+        },
+        {
+          "image": "../src/assets/6.png",
+          "name": "Beetroot",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 45,
+          "offer_price": 40.5
+        }
+      ]
+    },
+    {
+      "name": "Organic Produce",
+      "products": [
+        {
+           "image": "../src/assets/1.png",
+          "name": "Organic Tomato",
+          "offer": "7% OFF",
+          "quantity": "1kg",
+          "original_price": 60,
+          "offer_price": 55.8
+        },
+        {
+           "image": "../src/assets/2.png",
+          "name": "Organic Cucumber",
+          "offer": "6% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 47
+        },
+            {
+           "image": "../src/assets/3.png",
+          "name": "Organic Tomato",
+          "offer": "7% OFF",
+          "quantity": "1kg",
+          "original_price": 60,
+          "offer_price": 55.8
+        },
+        {
+           "image": "../src/assets/4.png",
+          "name": "Organic Cucumber",
+          "offer": "6% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 47
+        },
+            {
+           "image": "../src/assets/5.png",
+          "name": "Organic Tomato",
+          "offer": "7% OFF",
+          "quantity": "1kg",
+          "original_price": 60,
+          "offer_price": 55.8
+        },
+        {
+           "image": "../src/assets/6.png",
+          "name": "Organic Cucumber",
+          "offer": "6% OFF",
+          "quantity": "1kg",
+          "original_price": 50,
+          "offer_price": 47
+        }
+      ]
+    },
+    {
+      "name": "Herbs",
+      "products": [
+        {
+          "image": "../src/assets/1.png",
+          "name": "Coriander Leaves",
+          "offer": "5% OFF",
+          "quantity": "100g",
+          "original_price": 20,
+          "offer_price": 19
+        },
+        {
+          "image": "../src/assets/2.png",
+          "name": "Mint Leaves",
+          "offer": "6% OFF",
+          "quantity": "100g",
+          "original_price": 25,
+          "offer_price": 23.5
+        },
+          {
+          "image": "../src/assets/3.png",
+          "name": "Coriander Leaves",
+          "offer": "5% OFF",
+          "quantity": "100g",
+          "original_price": 20,
+          "offer_price": 19
+        },
+        {
+          "image": "../src/assets/4.png",
+          "name": "Mint Leaves",
+          "offer": "6% OFF",
+          "quantity": "100g",
+          "original_price": 25,
+          "offer_price": 23.5
+        },
+          {
+          "image": "../src/assets/5.png",
+          "name": "Coriander Leaves",
+          "offer": "5% OFF",
+          "quantity": "100g",
+          "original_price": 20,
+          "offer_price": 19
+        },
+        {
+          "image": "../src/assets/6.png",
+          "name": "Mint Leaves",
+          "offer": "6% OFF",
+          "quantity": "100g",
+          "original_price": 25,
+          "offer_price": 23.5
+        }
+      ]
+    },
+    {
+      "name": "Fresh Chicken",
+      "products": [
+        {
+           "image": "../src/assets/1.png",
+          "name": "Fresh Chicken Breast",
+          "offer": "15% OFF",
+          "quantity": "500g",
+          "original_price": 160,
+          "offer_price": 136
+        },
+        {
+         "image": "../src/assets/1.png",
+          "name": "Chicken Drumsticks",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 220,
+          "offer_price": 198
+        }
+      ]
+    },
+    {
+      "name": "Mutton",
+      "products": [
+        {
+           "image": "../src/assets/1.png",
+          "name": "Goat Mutton",
+          "offer": "12% OFF",
+          "quantity": "500g",
+          "original_price": 450,
+          "offer_price": 396
+        },
+        {
+           "image": "../src/assets/1.png",
+          "name": "Lamb Chops",
+          "offer": "10% OFF",
+          "quantity": "1kg",
+          "original_price": 850,
+          "offer_price": 765
+        }
+      ]
+    },
+    {
+      "name": "Seafood",
+      "products": [
+        {
+           "image": "../src/assets/1.png",
+          "name": "Prawns",
+          "offer": "20% OFF",
+          "quantity": "1kg",
+          "original_price": 600,
+          "offer_price": 480
+        },
+        {
+          "image": "/images/crab.jpg",
+          "name": "Crab",
+          "offer": "18% OFF",
+          "quantity": "1kg",
+          "original_price": 700,
+          "offer_price": 574
+        }
+      ]
+    },
+    {
+      "name": "Frozen Meats",
+      "products": [
+        {
+           "image": "../src/assets/1.png",
+          "name": "Frozen Chicken Nuggets",
+          "offer": "10% OFF",
+          "quantity": "500g",
+          "original_price": 180,
+          "offer_price": 162
+        },
+        {
+           "image": "../src/assets/1.png",
+          "name": "Frozen Fish Fillets",
+          "offer": "12% OFF",
+          "quantity": "500g",
+          "original_price": 250,
+          "offer_price": 220
+        }
+      ]
+    },
+    {
+      "name": "Fish Fillets",
+      "products": [
+        {
+          "image": "../src/assets/1.png",
+          "name": "Salmon Fillet",
+          "offer": "10% OFF",
+          "quantity": "500g",
+          "original_price": 600,
+          "offer_price": 540
+        },
+        {
+          "image": "../src/assets/1.png",
+          "name": "Rohu Fillet",
+          "offer": "15% OFF",
+          "quantity": "1kg",
+          "original_price": 450,
+          "offer_price": 382.5
+        }
+      ]
+    }
+  ]
+}

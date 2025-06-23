@@ -1,0 +1,94 @@
+{
+    "categories": [
+        {
+            "title": "Fruits and Vegetables",
+            "subcategories": [
+                "Fresh Fruits",
+                "Leafy Greens",
+                "Root Vegetables",
+                "Organic Produce",
+                "Herbs"
+            ]
+        },
+        {
+            "title": "Meats and Fish",
+            "subcategories": [
+                "Fresh Chicken",
+                "Mutton",
+                "Seafood",
+                "Frozen Meats",
+                "Fish Fillets"
+            ]
+        },
+        {
+            "title": "Snacks",
+            "subcategories": [
+                "Chips",
+                "Biscuits",
+                "Namkeen",
+                "Protein Bars",
+                "Popcorn"
+            ]
+        },
+        {
+            "title": "Pet Care",
+            "subcategories": [
+                "Dog Food",
+                "Cat Food",
+                "Pet Toys",
+                "Pet Grooming",
+                "Pet Accessories"
+            ]
+        },
+        {
+            "title": "Home and Cleaning",
+            "subcategories": [
+                "Laundry",
+                "Dishwashing",
+                "Floor Cleaners",
+                "Air Fresheners",
+                "Toilet Cleaners"
+            ]
+        },
+        {
+            "title": "Dairy",
+            "subcategories": [
+                "Milk",
+                "Cheese",
+                "Butter",
+                "Yogurt",
+                "Paneer"
+            ]
+        },
+        {
+            "title": "Cooking",
+            "subcategories": [
+                "Oils",
+                "Spices",
+                "Flours",
+                "Pulses",
+                "Instant Mixes"
+            ]
+        },
+        {
+            "title": "Breakfast",
+            "subcategories": [
+                "Cereals",
+                "Oats",
+                "Bread",
+                "Pancake Mix",
+                "Breakfast Bars"
+            ]
+        },
+        {
+            "title": "Beverage",
+            "subcategories": [
+                "Tea",
+                "Coffee",
+                "Juices",
+                "Energy Drinks",
+                "Soft Drinks"
+            ]
+        }
+    ]
+}
