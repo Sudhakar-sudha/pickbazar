@@ -1,45 +1,3 @@
-// import Cards from './components/cards'
-// import CategoryDropdown from './components/categoryDropdown'
-// import CategoryProductCards from './components/CategoryProductCards'
-// import Home from './components/home'
-// import Navbar from './components/navbar'
-// import CartBox from './components/cartBox'
-// import { useState } from "react";
-// function App() {
-//   const [cartItems, setCartItems] = useState([]);
-//   const [selectedCategory, setSelectedCategory] = useState("Fresh Fruits");
-
-//   const handleAddToCart = (product) => {
-//     setCartItems((prev) => [...prev, product]);
-//   };
-
-
-
-//   return (
-//     <>
-//     <Navbar/>
-//     <Home/>
-//     <Cards/>
-//        <div className="min-h-screen flex flex-col md:flex-row ">
-//       <CategoryDropdown onSelectCategory={setSelectedCategory} />
-//         <div className="relative min-h-screen">
-//       <h1 className="text-2xl font-bold text-center mt-6">🛍️ Pick Your Products</h1>
-
-//       {/* Render products by category */}
-//       <CategoryProductCards
-//         selectedCategory={selectedCategory}
-//         onAddToCart={handleAddToCart}
-//       />
-
-//       {/* Sticky cart box */}
-//       <CartBox cartItems={cartItems} />
-//     </div>
-//     </div>
-//     </>
-//   )
-// }
-
-// export default App
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -97,7 +55,6 @@ function App() {
   };
 
 
-  const [selectedCategory, setSelectedCategory] = useState("Fresh Fruits");
 
   return (
     <>
@@ -113,8 +70,8 @@ function App() {
                      <Home onSearch={setSelectedCategory} />
                 <Cards />
                 <div className="min-h-screen flex flex-col md:flex-row">
-                  <CategoryDropdown onSelectCategory={setSelectedCategory} onSelectCategory={setSelectedCategory}/>
-                  <div className="relative flex-1 px-4">
+                  <CategoryDropdown onSelectCategory={setSelectedCategory} />
+                  <div id="shop" className="relative flex-1 px-4">
                     <CategoryProductCards
                       selectedCategory={selectedCategory}
                       cartItems={cartItems}
