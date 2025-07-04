@@ -3,9 +3,10 @@ import { X, ShoppingBag, Plus, Minus } from "lucide-react";
 
 const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isOrderConfirmed, setIsOrderConfirmed] = useState(false);
   const totalItems = cartItems.length; // total products
   const totalPrice = cartItems.reduce((acc, item) => acc + item.quantity * item.offer_price, 0);
+  const [showPopup, setShowPopup] = useState(false);
 
   return (
     <>
@@ -52,10 +53,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
           ) : (
             <div className="space-y-4 overflow-y-auto px-5 pr-3 flex-1">
               {cartItems.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex gap-4 items-start pb-3 relative"
-                >
+                <div key={idx} className="flex gap-4 items-start pb-3 relative">
                   {/* Quantity Controls */}
                   <div className="flex flex-col items-center gap-1 bg-gray-200 rounded-4xl p-1">
                     <button
@@ -64,7 +62,9 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
                     >
                       <Plus size={14} />
                     </button>
-                    <span className="text-sm font-semibold">{item.quantity}</span>
+                    <span className="text-sm font-semibold">
+                      {item.quantity}
+                    </span>
                     <button
                       onClick={() => onDecrement(item.name)}
                       className="bg-gray-200 text-gray-800 rounded-full p-1 hover:bg-red-200 cursor-pointer"
@@ -83,7 +83,9 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
                   {/* Product Details */}
                   <div className="flex-1">
                     <h3 className="font-semibold text-sm mb-1">{item.name}</h3>
-                    <p className="text-xs text-[#00b386] font-bold">${item.offer_price}</p>
+                    <p className="text-xs text-[#00b386] font-bold">
+                      ${item.offer_price}
+                    </p>
                     <p className="text-xs text-gray-500">
                       {item.quantity} × ({item.quantityLabel || "1kg"})
                     </p>
@@ -107,12 +109,63 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
             </div>
           )}
 
+          {showPopup && (
+            <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex items-center justify-center">
+              <div className="bg-white rounded-2xl shadow-lg p-6 w-[90%] sm:w-[400px] text-center relative">
+                <h2 className="text-2xl font-bold text-[#00b386] mb-4">
+                  Order Placed Successfully!
+                </h2>
+
+                <p className="text-gray-600 mb-4">
+                  Thank you for your order. Here's your summary:
+                </p>
+
+                <div className="text-left max-h-60 overflow-y-auto mb-4">
+                  {cartItems.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex justify-between text-sm py-1 border-b"
+                    >
+                      <span>
+                        {item.name} × {item.quantity}
+                      </span>
+                      <span>₹{item.quantity * item.offer_price}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="text-lg font-bold text-[#00b386] mb-4">
+                  Total: ₹{totalPrice}
+                </div>
+
+                <button
+                  onClick={() => setShowPopup(false)}
+                  className="bg-[#00b386] text-white px-6 py-2 rounded-full hover:bg-green-700 transition"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Footer */}
           <div className="p-4">
-            <button className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 cursor-pointer px-4 rounded-3xl hover:bg-green-700 transition">
+            {/* <button className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 cursor-pointer px-4 rounded-3xl hover:bg-green-700 transition">
               <span className="text-lg font-medium">Checkout</span>
               <span className="bg-white text-[#00b386] text-sm font-semibold px-6 py-2 rounded-3xl shadow-sm">
                 ${totalPrice}
+              </span>
+            </button> */}
+            <button
+              className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 cursor-pointer px-4 rounded-3xl hover:bg-green-700 transition"
+              onClick={() => {
+                setShowPopup(true);
+                setCartItems([]); // ✅ Clears the cart
+              }}
+            >
+              <span className="text-lg font-medium">Checkout</span>
+              <span className="bg-white text-[#00b386] text-sm font-semibold px-6 py-2 rounded-3xl shadow-sm">
+                ₹{totalPrice}
               </span>
             </button>
           </div>
