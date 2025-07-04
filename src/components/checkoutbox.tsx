@@ -109,7 +109,7 @@ const CartBox = ({ cartItems, onIncrement, onDecrement, onRemove }) => {
 
           {/* Footer */}
           <div className="p-4">
-            <button className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 px-4 rounded-3xl hover:bg-green-700 transition">
+            <button className="w-full flex justify-between items-center bg-[#00b386] text-white py-2 cursor-pointer px-4 rounded-3xl hover:bg-green-700 transition">
               <span className="text-lg font-medium">Checkout</span>
               <span className="bg-white text-[#00b386] text-sm font-semibold px-6 py-2 rounded-3xl shadow-sm">
                 ${totalPrice}

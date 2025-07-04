@@ -28,6 +28,7 @@ const CategoryDropdown = ({ onSelectCategory }) => {
   const [activeIndex, setActiveIndex] = React.useState(null);
 
   return (
+    <section id="shops">
     <div className="max-w-80 min-h-screen bg-white p-3">
       <div className="space-y-4">
         {categoriesData.categories.map((category, index) => (
@@ -60,6 +61,7 @@ const CategoryDropdown = ({ onSelectCategory }) => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

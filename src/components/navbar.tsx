@@ -7,6 +7,15 @@ const Navbar = () => {
   const [showPages, setShowPages] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const handleJoinClick = () => {
+    alert("Join as a customer to start shopping with PicBazar.");
+  };
+
+  const handleSellerClick = () => {
+    alert("Register as a seller to list and sell your products on PicBazar.");
+  };
+
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10); // scroll threshold
@@ -17,21 +26,21 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Shops", href: "#" },
-    { name: "Offers", href: "#offers" },
-    { name: "Contact", href: "#contact" },
+    { name: "Shops", href: "/#shops" },
+    { name: "Offers", href: "/#offers" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const pagesDropdown = [
-    { name: "About Us", href: "#about" },
-    { name: "Terms & Conditions", href: "#terms" },
-    { name: "FAQ", href: "#faq" },
+    { name: "About Us", href: "/about" },
+    { name: "Terms & Conditions", href: "/termsandconditions" },
+    { name: "FAQ", href: "/#faq" },
   ];
 
   const groceryDropdown = [
-    { name: "Fruits", href: "#fruits" },
-    { name: "Vegetables", href: "#vegetables" },
-    { name: "Beverages", href: "#beverages" },
+    { name: "Fruits", href: "/#shops" },
+    { name: "Vegetables", href: "/#shops" },
+    { name: "Beverages", href: "/#shops" },
   ];
 
   return (
@@ -110,10 +119,12 @@ const Navbar = () => {
             </div>
 
             {/* Action Buttons */}
-            <button className="bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-100 hover:text-black  border-2 hover:border-green-700 cursor-pointer">
+            <button className="bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-100 hover:text-black  border-2 hover:border-green-700 cursor-pointer"
+              onClick={handleJoinClick}>
               Join
             </button>
-            <button className="bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-100 hover:text-black border-2 hover:border-green-700 cursor-pointer">
+            <button className="bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-100 hover:text-black border-2 hover:border-green-700 cursor-pointer"
+               onClick={handleSellerClick}>
               Become a Seller
             </button>
           </div>
@@ -175,13 +186,21 @@ const Navbar = () => {
 
           {/* Action Buttons */}
           <div className="pt-2 space-y-2">
-            <button className="w-full bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-400 transition cursor-pointer">
+            <button
+              className="w-full bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-400 transition cursor-pointer"
+              onClick={handleJoinClick}
+            >
               Join
             </button>
-            <button className="w-full bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-400 transition cursor-pointer">
+
+            <button
+              className="w-full bg-[#00b386] text-white px-4 py-2 rounded hover:bg-green-400 transition cursor-pointer"
+              onClick={handleSellerClick}
+            >
               Become a Seller
             </button>
           </div>
+
         </div>
       )}
 

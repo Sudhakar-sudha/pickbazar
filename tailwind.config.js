@@ -6,10 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: ['responsive'],
         screens: {
         'xs320': '320px', // ✅ custom breakpoint
       },
     },
   },
   plugins: [],
+   variants: {
+    extend: {
+      scrollBehavior: ['responsive'],
+    },
+  },
 }

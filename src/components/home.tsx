@@ -1,8 +1,36 @@
 import { FaSearch } from "react-icons/fa";
+import { useState } from "react";
+const Home = ({ onSearch }) => {
 
-const Home = () => {
+    const [query, setQuery] = useState("");
+    const handleSearch = () => {
+        const input = query.toLowerCase().trim();
+
+        // Map keywords to categories
+        const categoryMap = {
+            fruits: "Fresh Fruits",
+            vegetables: "Fresh Vegetables",
+            meat: "Meats and Fish",
+            fish: "Meats and Fish",
+            snacks: "Snacks",
+            dairy: "Dairy",
+            cooking: "Cooking",
+            breakfast: "Breakfast",
+            beverage: "Beverage",
+        };
+
+        const matched = categoryMap[input];
+        if (matched) {
+            onSearch(matched); // ✅ this updates selectedCategory in App
+            // Optional: Scroll to the shop section
+            const shopSection = document.getElementById("shop");
+            if (shopSection) shopSection.scrollIntoView({ behavior: "smooth" });
+        } else {
+            alert("Category not found. Try keywords like 'fruits', 'snacks', etc.");
+        }
+    };
     return (
-        <section
+        <section id="/"
             className="h-screen bg-cover bg-center flex items-center justify-center text-white"
             style={{ backgroundImage: "url('/bg.png')" }} // Replace with your image path
         >
@@ -15,20 +43,19 @@ const Home = () => {
                 </p>
 
 
-                {/* Search Box */}
-                <div className="mt-16 flex sm:flex-row items-center justify-center px-4 gap-0 sm:gap-0 max-w-3xl mx-auto w-full">
-                    {/* Input - 3/4 width */}
-                    <div className="w-full sm:basis-3/4">
-                        <input
-                            type="text"
-                            placeholder="Search for products from here"
-                            className="w-full px-4 py-3 text-black border-2 border-white shadow-2xl rounded-l-2xl outline-none bg-white"
-                        />
-                    </div>
-
-                    {/* Button - 1/4 width */}
-                    <button className=" sm:basis-1/4 bg-[#00b386] hover:bg-green-700 text-white px-6 py-3 rounded-r-2xl transition cursor-pointer flex items-center justify-center gap-2">
-                        <FaSearch className="text-white" />
+                <div className="flex w-full max-w-xl shadow-lg rounded-2xl overflow-hidden">
+                    <input
+                        type="text"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        placeholder="Search categories like fruits, dairy, etc..."
+                        className="flex-1 px-4 py-3 outline-none"
+                    />
+                    <button
+                        onClick={handleSearch}
+                        className="bg-[#00b386] text-white px-6 py-3 hover:bg-green-600 flex items-center gap-2"
+                    >
+                        <FaSearch />
                         Search
                     </button>
                 </div>

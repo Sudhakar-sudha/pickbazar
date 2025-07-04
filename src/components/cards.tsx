@@ -74,6 +74,7 @@ const Cards = () => {
   const visibleCards = getVisibleCards();
 
   return (
+    <section id="offers" >
     <div className="w-full px-4 py-8 overflow-hidden">
 
       <div className="relative">
@@ -119,6 +120,7 @@ const Cards = () => {
         </button>
       </div>
     </div>
+    </section>
   );
 };
 
